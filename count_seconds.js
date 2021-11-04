@@ -146,7 +146,7 @@ eleven = `
 times = [zero, one, two, three, four, five, six, seven, eight, nine, ten, eleven],
 i = 0, secs = 0, mins = 0, hrs = 0;
 
-const countDown = sec => {
+const countSecs = sec => {
    console.clear();
    secs++;
    if (secs > 60) {
@@ -161,6 +161,4 @@ const countDown = sec => {
    console.log(times[i++], `\n seconds: ${secs - 1} minutes: ${mins} hours: ${hrs}`);
 }
 
-setInterval(countDown, 1000);
-
-//weiteres: rückwärts zählen lassen und zeitlimit vorgeben
+setInterval(countSecs, 1000);
