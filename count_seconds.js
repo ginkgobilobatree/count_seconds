@@ -146,7 +146,7 @@ eleven = `
 times = [zero, one, two, three, four, five, six, seven, eight, nine, ten, eleven],
 i = 0, secs = 0, mins = 0, hrs = 0;
 
-const countSecs = sec => {
+const countSecs = () => {
    console.clear();
    secs++;
    if (secs > 60) {
