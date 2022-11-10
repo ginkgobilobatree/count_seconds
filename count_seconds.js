@@ -148,8 +148,7 @@ i = 0, secs = 0, mins = 0, hrs = 0;
 
 const countSecs = () => {
    console.clear();
-   secs++;
-   if (secs > 60) {
+   if (secs > 59) {
       secs -= 60;
       mins++;
    }
@@ -158,7 +157,7 @@ const countSecs = () => {
       hrs++;
    }
    if (i > 11) i -= 12;
-   console.log(times[i++], `\n seconds: ${secs - 1} minutes: ${mins} hours: ${hrs}`);
+   console.log(times[i++], `\n seconds: ${secs++} minutes: ${mins} hours: ${hrs}`);
 }
 
-setInterval(countSecs, 1000);
+setInterval(countSecs, 500);
