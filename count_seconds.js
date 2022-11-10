@@ -160,4 +160,4 @@ const countSecs = () => {
    console.log(times[i++], `\n seconds: ${secs++} minutes: ${mins} hours: ${hrs}`);
 }
 
-setInterval(countSecs, 500);
+setInterval(countSecs, 1000);
